@@ -6,8 +6,9 @@ def oxford_comma(array)
   array.each do |el|
     string << el 
     count += 1 
-    
+    if array.size >= 2 
     count == array.size - 1 ? string << and_string : string << comma
+  end
   end
   
   string

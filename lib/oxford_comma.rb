@@ -5,7 +5,7 @@ def oxford_comma(array)
     string << el
     
     count += 1
-    if array.size > 1
+    if array.size > 1 && count < array.size
       count == array.size - 1 ?  string << " and " : string << ", "
     end
   end

@@ -1,12 +1,9 @@
 def oxford_comma(array)
   string = ""
-  count = 0
   array.each do |el|
     string << el
-    
-    count += 1
-    if array.size > 1 && count < array.size
-      count == array.size - 1 ?  string << ", and " : string << ", "
+    if array.size == 2 
+      string = array.join(" and ")
     end
   end
   string

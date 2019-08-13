@@ -9,4 +9,6 @@ def oxford_comma(array)
     
     count == array.size - 1 ? string << and_string : string << comma
   end
+  
+  string
 end

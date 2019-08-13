@@ -12,5 +12,5 @@ def oxford_comma(array)
     end
     
   end
-  string.pop(2)
+  string.pop
 end
